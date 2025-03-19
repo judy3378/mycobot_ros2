@@ -15,7 +15,6 @@ find_package(moveit_ros_visualization REQUIRED)
 find_package(rviz2 REQUIRED)
 find_package(rviz_visual_tools REQUIRED)
 
-
 # Copy necessary files to designated locations in the project
 install (
   DIRECTORY config launch rviz
@@ -27,6 +26,7 @@ install(
   FILES .setup_assistant
   DESTINATION share/${PROJECT_NAME}
 )
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
